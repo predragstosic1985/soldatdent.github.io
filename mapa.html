@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<!--
+	 HTML5 UP
+	@berkutsp info berkutsp@gmail.com
+	
+-->
+<html>
+	<head>
+		<title>SoldatDent - Adresa</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        
+         <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #map{
+            height: 500px;
+            width: 100%;
+        }
+    </style>
+        
+        
+        
+        
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Soldat Dent</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Naslovna</a></li>
+						<li><a href="o%20nama.html" class="active">O nama</a></li>
+						<li><a href="gallery.html">Galerija</a></li>
+                       
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Potrazite nas na mapi</h1>
+                            
+                            <div id="map"></div>
+
+ <script>
+    function initMap() {
+        var location = {lat: 44.875093, lng: 20.198400};
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 16,
+            center: location
+        });
+        var marker = new google.maps.Marker({
+            position: location,
+            map: map
+        });
+    }
+    </script>   
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBX28nopxt18tpN3Ntgz2bTc1r6iK4vhx8&callback=initMap">
+    
+    </script>
+                            
+                        
+                            
+                           	<br/>
+                            <br/>
+                           
+							<p>Adresa: Tihomira Trajkovica Dzoje 12, Ugrinovci, 11277 Zemun</p>
+                            <p>Telefon: 061/-23-24-357 </p>
+                            <p>Email adresa:
+                            <a href= "mailto:dusicasoldat@yahoo.com">dusicasoldat@yahoo.com</a>
+                            </p>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; predragstosic1985@gmail.com Sva prava rezervisana.</li><li>Dizajn: 
+						<a href="mailto:predragstosic1985"gmail.com>Predrag Stosic</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+    
+	</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<!--
+		predragstosic1985@gmail.com | Predrag Stosic
+-->
+<html>
+	<head>
+		<title>Galerija - Soldat - Dent</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <link rel="stylesheet" href="assets/css/gallery/blueimp-gallery.min.css"><!-- Gallery -->
+	</head>
+	<body>
+		<!-- Header -->
+			<header id="header">
+				<a href="#" class="title">Galerija</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Naslovna</a></li>
+						<li><a href="o%20nama.html">O nama</a></li>
+						<li><a href="mapa.html"  class="active">Lokacija</a></li>
+					</ul>
+				</nav>
+			</header>
+  <!-- Main -->      
+           
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+      <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    
+<div id="links">
+    <a href="images/galerija/DSC_2711.jpg" title="SoldatDent">
+        <img src="images/galerija/DSC_2711.jpg" alt="SoldatDent">
+    </a>
+    <a href="images/galerija/DSC_2713.jpg" title="SoldatDent">
+        <img src="images/galerija/DSC_2713.jpg" alt="SoldatDent">
+    </a>
+        <a href="images/galerija/DSC_2723.jpg" title="SoldatDent">
+        <img src="images/galerija/DSC_2723.jpg" alt="SoldatDent">
+    </a> 
+        <a href="images/galerija/DSC_2726.jpg" title="SoldatDent">
+        <img src="images/galerija/DSC_2726.jpg" alt="SoldatDent">
+    </a> 
+        <a href="images/galerija/DSC_2729.jpg" title="SoldatDent">
+        <img src="images/galerija/DSC_2729.jpg" alt="SoldatDent">
+    </a> 
+        <a href="images/galerija/DSC_2732.jpg" title="SoldatDent">
+        <img src="images/galerija/DSC_2732.jpg" alt="SoldatDent">
+    </a> 
+        <a href="images/galerija/DSC_2738.jpg" title="SoldatDent">
+        <img src="images/galerija/DSC_2738.jpg" alt="SoldatDent">
+    </a> 
+        <a href="images/galerija/DSC_2744.jpg" title="SoldatDent">
+        <img src="images/galerija/DSC_2744.jpg" alt="SoldatDent">
+    </a> 
+        <a href="images/galerija/DSC_2748.jpg" title="SoldatDent">
+        <img src="images/galerija/DSC_2748.jpg" alt="SoldatDent">
+    </a> 
+        <a href="images/galerija/DSC_2764.jpg" title="SoldatDent">
+        <img src="images/galerija/DSC_2764.jpg" alt="SoldatDent">
+    </a> 
+</div> 
+    
+</div>          
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+                 
+<div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>   
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy;Sva prava rezervisana.</li><li>Dizajn: <a href="mailto:predragstosic1985@gmail.com">Predrag Stosic</a></li>
+					</ul>
+				</div>
+			</footer>
+        
+        <!-- Script -->
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+        <script src="js/blueimp-gallery.min.js"></script> <!-- Gallery -->
+        
+        
+        <script><!-- Gallery -->
+document.getElementById('links').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
+</script>
+
+        <script><!-- Gallery -->
+blueimp.Gallery(
+    document.getElementById('links').getElementsByTagName('a'),
+    {
+        container: '#blueimp-gallery-carousel',
+        carousel: true
+    }
+);
+</script>
+           
+	</body>
+</html>
